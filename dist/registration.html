@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration - Bharat AI Innovation</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;600;700;800&family=Mukta:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+  <script type="module" crossorigin src="/assets/main-41H-Kuk8.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-C6sv0FU0.css">
+</head>
+
+<body class="bg-graphite-black text-white overflow-x-hidden">
+
+    <!-- Navbar (Duplicated) -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold font-montserrat tracking-wider">
+                        BHARAT <span class="text-bharat-saffron">AI</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="about.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="conference.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Conference</a>
+                        <a href="exhibition.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Exhibition</a>
+                        <a href="awards.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Awards</a>
+                        <a href="partners.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Partners</a>
+                        <a href="contact.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                        <a href="registration.html"
+                            class="bg-gradient-to-r from-bharat-saffron to-electric-blue text-white px-5 py-2 rounded-full text-sm font-medium hover:shadow-lg hover:shadow-bharat-saffron/30 transition-all">Register</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button id="mobile-menu-btn" type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden bg-graphite-black/95 backdrop-blur-xl" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="conference.html"
+                    class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Conference</a>
+                <a href="exhibition.html"
+                    class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Exhibition</a>
+                <a href="awards.html" class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Awards</a>
+                <a href="partners.html"
+                    class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Partners</a>
+                <a href="contact.html"
+                    class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <a href="registration.html"
+                    class="text-bharat-saffron block px-3 py-2 rounded-md text-base font-medium">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-16 bg-gradient-to-b from-black to-graphite-black relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
+            <div
+                class="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-bharat-saffron/10 rounded-full blur-[120px]">
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Register <span class="gradient-text">Now</span></h1>
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                Secure your spot at India's premier AI event.
+            </p>
+        </div>
+    </header>
+
+    <!-- Registration Forms -->
+    <section class="py-20 reveal-section">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Tabs -->
+            <div class="flex justify-center mb-12 space-x-4">
+                <button
+                    class="px-6 py-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-bharat-saffron active-tab"
+                    onclick="switchTab('delegate')">Delegate</button>
+                <button
+                    class="px-6 py-2 rounded-full bg-transparent border border-white/20 hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-bharat-saffron"
+                    onclick="switchTab('exhibitor')">Exhibitor</button>
+                <button
+                    class="px-6 py-2 rounded-full bg-transparent border border-white/20 hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-bharat-saffron"
+                    onclick="switchTab('award')">Award Nomination</button>
+            </div>
+
+            <!-- Delegate Form -->
+            <div id="delegate-form" class="card-glass p-8">
+                <h2 class="text-2xl font-bold mb-6 text-center">Delegate Registration</h2>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">First Name</label>
+                            <input type="text"
+                                class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
+                                placeholder="John">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Last Name</label>
+                            <input type="text"
+                                class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
+                                placeholder="Doe">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Email Address</label>
+                        <input type="email"
+                            class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
+                            placeholder="john@example.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Organization</label>
+                        <input type="text"
+                            class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
+                            placeholder="Company Name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Job Title</label>
+                        <input type="text"
+                            class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
+                            placeholder="CTO">
+                    </div>
+                    <button type="submit" class="w-full btn-primary">Register as Delegate</button>
+                </form>
+            </div>
+
+            <!-- Exhibitor Form (Hidden by default) -->
+            <div id="exhibitor-form" class="card-glass p-8 hidden">
+                <h2 class="text-2xl font-bold mb-6 text-center">Exhibitor Registration</h2>
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Company Name</label>
+                        <input type="text"
+                            class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
+                            placeholder="Tech Corp">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Contact Person</label>
+                            <input type="text"
+                                class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
+                                placeholder="Name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Phone Number</label>
+                            <input type="tel"
+                                class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
+                                placeholder="+91...">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Booth Size Requirement</label>
+                        <select
+                            class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors text-gray-300">
+                            <option>Standard (3x3m)</option>
+                            <option>Premium (6x3m)</option>
+                            <option>Island (6x6m)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full btn-primary">Request Exhibitor Info</button>
+                </form>
+            </div>
+
+            <!-- Award Form (Hidden by default) -->
+            <div id="award-form" class="card-glass p-8 hidden">
+                <h2 class="text-2xl font-bold mb-6 text-center">Award Nomination</h2>
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Nominee Name / Project</label>
+                        <input type="text"
+                            class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
+                            placeholder="Project X">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Category</label>
+                        <select
+                            class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors text-gray-300">
+                            <option>Best AI Startup</option>
+                            <option>AI for Social Good</option>
+                            <option>Best Enterprise AI</option>
+                            <option>Woman in AI</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Description of Innovation</label>
+                        <textarea
+                            class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors h-32"
+                            placeholder="Describe the impact..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full btn-primary">Submit Nomination</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer (Duplicated) -->
+    <footer class="bg-black py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="#" class="text-2xl font-bold font-montserrat tracking-wider mb-4 block">
+                        BHARAT <span class="text-bharat-saffron">AI</span>
+                    </a>
+                    <p class="text-gray-400 max-w-md">
+                        Bharat AI Innovation — Conference, Exhibition & Awards 2026. <br>
+                        Advancing India’s Future Through AI Innovation.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-bharat-saffron transition-colors">About</a></li>
+                        <li><a href="conference.html" class="hover:text-bharat-saffron transition-colors">Conference</a>
+                        </li>
+                        <li><a href="exhibition.html" class="hover:text-bharat-saffron transition-colors">Exhibition</a>
+                        </li>
+                        <li><a href="awards.html" class="hover:text-bharat-saffron transition-colors">Awards</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>info@bharataiinnovation.com</li>
+                        <li>+91-XXXXXXXXXX</li>
+                        <li>Mumbai, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-white/10 text-center text-gray-500 text-sm">
+                &copy; 2026 Bharat AI Innovation. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function switchTab(tabName) {
+            // Hide all forms
+            document.getElementById('delegate-form').classList.add('hidden');
+            document.getElementById('exhibitor-form').classList.add('hidden');
+            document.getElementById('award-form').classList.add('hidden');
+
+            // Show selected form
+            document.getElementById(tabName + '-form').classList.remove('hidden');
+
+            // Update button styles (simplified for this demo)
+            // In a real app, I'd toggle classes on the buttons too
+        }
+    </script>
+</body>
+
+</html>
