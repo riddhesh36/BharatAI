@@ -20,7 +20,7 @@
 
     <!-- Navbar (Duplicated) -->
     <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex-shrink-0">
                     <a href="index.html" class="text-2xl font-bold font-montserrat tracking-wider">
@@ -30,7 +30,7 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="index.html"
-                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                            class="text-white hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
                         <a href="about.html"
                             class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
                         <a href="conference.html"
@@ -87,7 +87,7 @@
                 class="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-bharat-saffron/10 rounded-full blur-[120px]">
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Register <span class="gradient-text">Now</span></h1>
             <p class="text-xl text-gray-400 max-w-3xl mx-auto">
                 Secure your spot at India's premier AI event.
@@ -102,13 +102,13 @@
             <!-- Tabs -->
             <div class="flex justify-center mb-12 space-x-4">
                 <button
-                    class="px-6 py-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-bharat-saffron active-tab"
+                    class="px-6 py-2 rounded-full bg-gray-200 hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-bharat-saffron active-tab"
                     onclick="switchTab('delegate')">Delegate</button>
                 <button
-                    class="px-6 py-2 rounded-full bg-transparent border border-white/20 hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-bharat-saffron"
+                    class="px-6 py-2 rounded-full bg-transparent border border-gray-300 dark:border-white/20 hover:bg-gray-200 dark:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-bharat-saffron"
                     onclick="switchTab('exhibitor')">Exhibitor</button>
                 <button
-                    class="px-6 py-2 rounded-full bg-transparent border border-white/20 hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-bharat-saffron"
+                    class="px-6 py-2 rounded-full bg-transparent border border-gray-300 dark:border-white/20 hover:bg-gray-200 dark:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-bharat-saffron"
                     onclick="switchTab('award')">Award Nomination</button>
             </div>
 
@@ -118,20 +118,23 @@
                 <form class="space-y-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label class="block text-sm font-medium text-gray-400 mb-2">First Name</label>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">First
+                                Name</label>
                             <input type="text"
                                 class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
                                 placeholder="John">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-400 mb-2">Last Name</label>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Last
+                                Name</label>
                             <input type="text"
                                 class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
                                 placeholder="Doe">
                         </div>
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-400 mb-2">Email Address</label>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Email
+                            Address</label>
                         <input type="email"
                             class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
                             placeholder="john@example.com">
@@ -157,27 +160,31 @@
                 <h2 class="text-2xl font-bold mb-6 text-center">Exhibitor Registration</h2>
                 <form class="space-y-6">
                     <div>
-                        <label class="block text-sm font-medium text-gray-400 mb-2">Company Name</label>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Company
+                            Name</label>
                         <input type="text"
                             class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
                             placeholder="Tech Corp">
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label class="block text-sm font-medium text-gray-400 mb-2">Contact Person</label>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Contact
+                                Person</label>
                             <input type="text"
                                 class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
                                 placeholder="Name">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-400 mb-2">Phone Number</label>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Phone
+                                Number</label>
                             <input type="tel"
                                 class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
                                 placeholder="+91...">
                         </div>
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-400 mb-2">Booth Size Requirement</label>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Booth Size
+                            Requirement</label>
                         <select
                             class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors text-gray-300">
                             <option>Standard (3x3m)</option>
@@ -194,7 +201,8 @@
                 <h2 class="text-2xl font-bold mb-6 text-center">Award Nomination</h2>
                 <form class="space-y-6">
                     <div>
-                        <label class="block text-sm font-medium text-gray-400 mb-2">Nominee Name / Project</label>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Nominee Name /
+                            Project</label>
                         <input type="text"
                             class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
                             placeholder="Project X">
@@ -210,7 +218,8 @@
                         </select>
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-400 mb-2">Description of Innovation</label>
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Description of
+                            Innovation</label>
                         <textarea
                             class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors h-32"
                             placeholder="Describe the impact..."></textarea>
@@ -224,7 +233,7 @@
 
     <!-- Footer (Duplicated) -->
     <footer class="bg-black py-12 border-t border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="col-span-1 md:col-span-2">
                     <a href="#" class="text-2xl font-bold font-montserrat tracking-wider mb-4 block">

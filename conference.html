@@ -20,7 +20,7 @@
 
     <!-- Navbar (Duplicated) -->
     <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex-shrink-0">
                     <a href="index.html" class="text-2xl font-bold font-montserrat tracking-wider">
@@ -30,11 +30,11 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="index.html"
-                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                            class="text-white hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
                         <a href="about.html"
                             class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
                         <a href="conference.html"
-                            class="text-white hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Conference</a>
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Conference</a>
                         <a href="exhibition.html"
                             class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Exhibition</a>
                         <a href="awards.html"
@@ -47,18 +47,19 @@
                             class="bg-gradient-to-r from-bharat-saffron to-electric-blue text-white px-5 py-2 rounded-full text-sm font-medium hover:shadow-lg hover:shadow-bharat-saffron/30 transition-all">Register</a>
                     </div>
                 </div>
-                <div class="-mr-2 flex md:hidden">
-                    <button id="mobile-menu-btn" type="button"
-                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
             </div>
+            <div class="-mr-2 flex md:hidden">
+                <button id="mobile-menu-btn" type="button"
+                    class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
         </div>
         <!-- Mobile menu -->
         <div class="hidden md:hidden bg-graphite-black/95 backdrop-blur-xl" id="mobile-menu">
@@ -87,7 +88,7 @@
                 class="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-electric-blue/10 rounded-full blur-[120px]">
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <h1 class="text-4xl md:text-6xl font-extrabold mb-6">The <span class="gradient-text">Conference</span></h1>
             <p class="text-xl text-gray-400 max-w-3xl mx-auto">
                 Two days of intensive knowledge sharing, panel discussions, and keynotes.
@@ -97,7 +98,7 @@
 
     <!-- Overview -->
     <section class="py-20 reveal-section">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Overview</h2>
                 <p class="text-gray-300 max-w-3xl mx-auto">
@@ -110,47 +111,53 @@
 
     <!-- Tracks -->
     <section class="py-20 bg-white/5 reveal-section">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Conference Tracks</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Track 1 -->
                 <div class="card-glass hover:bg-white/10 transition-colors">
                     <div class="text-bharat-saffron text-4xl mb-4 font-mukta">01</div>
                     <h3 class="text-xl font-bold mb-3">Generative AI & LLMs</h3>
-                    <p class="text-gray-400 text-sm">Exploring the next frontier of Large Language Models and their
+                    <p class="text-gray-400 text-sm">Exploring the next frontier of Large Language
+                        Models and their
                         application in Indian languages.</p>
                 </div>
                 <!-- Track 2 -->
                 <div class="card-glass hover:bg-white/10 transition-colors">
                     <div class="text-electric-blue text-4xl mb-4 font-mukta">02</div>
                     <h3 class="text-xl font-bold mb-3">AI in Healthcare</h3>
-                    <p class="text-gray-400 text-sm">Revolutionizing diagnostics, drug discovery, and patient care with
+                    <p class="text-gray-400 text-sm">Revolutionizing diagnostics, drug discovery, and
+                        patient care with
                         predictive AI.</p>
                 </div>
                 <!-- Track 3 -->
                 <div class="card-glass hover:bg-white/10 transition-colors">
                     <div class="text-emerald-green text-4xl mb-4 font-mukta">03</div>
                     <h3 class="text-xl font-bold mb-3">AI Governance & Ethics</h3>
-                    <p class="text-gray-400 text-sm">Building a framework for responsible AI development and deployment.
+                    <p class="text-gray-400 text-sm">Building a framework for responsible AI
+                        development and deployment.
                     </p>
                 </div>
                 <!-- Track 4 -->
                 <div class="card-glass hover:bg-white/10 transition-colors">
                     <div class="text-royal-gold text-4xl mb-4 font-mukta">04</div>
                     <h3 class="text-xl font-bold mb-3">AI in FinTech</h3>
-                    <p class="text-gray-400 text-sm">Fraud detection, personalized banking, and algorithmic trading.</p>
+                    <p class="text-gray-400 text-sm">Fraud detection, personalized banking, and
+                        algorithmic trading.</p>
                 </div>
                 <!-- Track 5 -->
                 <div class="card-glass hover:bg-white/10 transition-colors">
                     <div class="text-purple-500 text-4xl mb-4 font-mukta">05</div>
                     <h3 class="text-xl font-bold mb-3">Manufacturing & Robotics</h3>
-                    <p class="text-gray-400 text-sm">Industry 4.0, automation, and smart factories.</p>
+                    <p class="text-gray-400 text-sm">Industry 4.0, automation, and smart factories.
+                    </p>
                 </div>
                 <!-- Track 6 -->
                 <div class="card-glass hover:bg-white/10 transition-colors">
                     <div class="text-pink-500 text-4xl mb-4 font-mukta">06</div>
                     <h3 class="text-xl font-bold mb-3">AgriTech AI</h3>
-                    <p class="text-gray-400 text-sm">Empowering farmers with precision agriculture and yield prediction.
+                    <p class="text-gray-400 text-sm">Empowering farmers with precision agriculture
+                        and yield prediction.
                     </p>
                 </div>
             </div>
@@ -159,7 +166,7 @@
 
     <!-- Benefits -->
     <section class="py-20 reveal-section">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Benefits of Attending</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="flex items-start">
@@ -168,7 +175,8 @@
                         1</div>
                     <div class="ml-4">
                         <h3 class="text-xl font-bold mb-2">Knowledge Acquisition</h3>
-                        <p class="text-gray-400">Learn from the best in the industry through workshops and
+                        <p class="text-gray-400">Learn from the best in the industry through
+                            workshops and
                             masterclasses.</p>
                     </div>
                 </div>
@@ -178,7 +186,8 @@
                         2</div>
                     <div class="ml-4">
                         <h3 class="text-xl font-bold mb-2">Networking</h3>
-                        <p class="text-gray-400">Connect with peers, potential mentors, and business partners.</p>
+                        <p class="text-gray-400">Connect with peers, potential mentors, and business
+                            partners.</p>
                     </div>
                 </div>
                 <div class="flex items-start">
@@ -187,7 +196,8 @@
                         3</div>
                     <div class="ml-4">
                         <h3 class="text-xl font-bold mb-2">Career Growth</h3>
-                        <p class="text-gray-400">Discover new career opportunities and trends in the AI job market.</p>
+                        <p class="text-gray-400">Discover new career opportunities and trends in the
+                            AI job market.</p>
                     </div>
                 </div>
                 <div class="flex items-start">
@@ -196,7 +206,8 @@
                         4</div>
                     <div class="ml-4">
                         <h3 class="text-xl font-bold mb-2">Certification</h3>
-                        <p class="text-gray-400">Receive a certificate of participation for attending workshops.</p>
+                        <p class="text-gray-400">Receive a certificate of participation for attending
+                            workshops.</p>
                     </div>
                 </div>
             </div>
@@ -204,8 +215,8 @@
     </section>
 
     <!-- Footer (Duplicated) -->
-    <footer class="bg-black py-12 border-t border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer class="bg-black/30 py-12 border-t border-white/10">
+        <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="col-span-1 md:col-span-2">
                     <a href="#" class="text-2xl font-bold font-montserrat tracking-wider mb-4 block">

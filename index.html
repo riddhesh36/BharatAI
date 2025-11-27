@@ -22,7 +22,7 @@
 
   <!-- Navbar -->
   <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         <div class="flex-shrink-0">
           <a href="index.html" class="text-2xl font-bold font-montserrat tracking-wider">
@@ -88,7 +88,7 @@
     </div>
 
     <div
-      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <div class="hero-content text-center lg:text-left">
         <div class="inline-block px-4 py-1 rounded-full border border-bharat-saffron/30 bg-bharat-saffron/10 mb-6">
           <span class="text-bharat-saffron font-semibold tracking-wider text-sm uppercase">Mumbai • 2026</span>
@@ -137,7 +137,7 @@
 
   <!-- About Section -->
   <section class="py-20 bg-graphite-black relative reveal-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">About the Event</h2>
         <div class="w-24 h-1 bg-gradient-to-r from-bharat-saffron to-electric-blue mx-auto rounded-full"></div>
@@ -192,9 +192,97 @@
     </div>
   </section>
 
+  <!-- Scroll Expanding Video Section -->
+  <section id="video-section" class="py-20 bg-graphite-black relative overflow-hidden">
+    <div class="w-full flex justify-center">
+      <div id="video-container" class="w-[60%] h-[60vh] rounded-3xl overflow-hidden relative shadow-2xl">
+        <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+          <source src="/movie.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="absolute bottom-10 left-10 text-white z-10">
+          <h3 class="text-3xl font-bold mb-2">Experience the Future</h3>
+          <p class="text-lg text-gray-200">Immersive technologies redefining reality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="py-20 bg-graphite-black relative">
+    <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-bharat-saffron to-electric-blue mx-auto rounded-full"></div>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-12">
+        <!-- Left Column: Sticky Images -->
+        <div class="lg:w-1/2 hidden lg:block">
+          <div
+            class="sticky top-24 h-[600px] w-full rounded-2xl overflow-hidden border border-white/10 bg-white/5 relative">
+            <!-- Image 1 -->
+            <img id="process-img-1"
+              src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2070&auto=format&fit=crop"
+              alt="Registration"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100">
+
+            <!-- Image 2 -->
+            <img id="process-img-2"
+              src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074&auto=format&fit=crop"
+              alt="Selection"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0">
+
+            <!-- Image 3 -->
+            <img id="process-img-3"
+              src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2069&auto=format&fit=crop"
+              alt="Event" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0">
+          </div>
+        </div>
+
+        <!-- Right Column: Scrolling Text -->
+        <div class="lg:w-1/2">
+          <!-- Step 1 -->
+          <div id="process-step-1"
+            class="min-h-[80vh] flex flex-col justify-center p-8 border-l-2 border-bharat-saffron/30">
+            <div class="text-bharat-saffron text-6xl font-bold mb-6 opacity-50">01</div>
+            <h3 class="text-3xl font-bold mb-4">Registration & Nomination</h3>
+            <p class="text-xl text-gray-400 leading-relaxed">
+              Start your journey by registering as a delegate or nominating your innovation for the awards.
+              Our streamlined process ensures a hassle-free experience.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div id="process-step-2"
+            class="min-h-[80vh] flex flex-col justify-center p-8 border-l-2 border-electric-blue/30">
+            <div class="text-electric-blue text-6xl font-bold mb-6 opacity-50">02</div>
+            <h3 class="text-3xl font-bold mb-4">Selection & Curation</h3>
+            <p class="text-xl text-gray-400 leading-relaxed">
+              Our expert panel reviews all nominations and applications.
+              Shortlisted candidates and exhibitors are selected based on innovation, impact, and scalability.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div id="process-step-3"
+            class="min-h-[80vh] flex flex-col justify-center p-8 border-l-2 border-emerald-green/30">
+            <div class="text-emerald-green text-6xl font-bold mb-6 opacity-50">03</div>
+            <h3 class="text-3xl font-bold mb-4">The Grand Event</h3>
+            <p class="text-xl text-gray-400 leading-relaxed">
+              Join us in Mumbai for 3 days of groundbreaking sessions, networking, and the prestigious awards ceremony.
+              Witness the future of AI unfold.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Why Attend Section -->
   <section class="py-20 bg-black/30 reveal-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div>
           <h2 class="text-3xl md:text-4xl font-bold mb-8">Why Attend?</h2>
@@ -202,7 +290,8 @@
             <li class="flex items-start">
               <span
                 class="flex-shrink-0 h-6 w-6 rounded-full bg-bharat-saffron flex items-center justify-center text-xs font-bold mt-1 mr-4">✓</span>
-              <p class="text-gray-300">Network with top government officials and industry leaders.</p>
+              <p class="text-gray-300">Network with top government officials and industry leaders.
+              </p>
             </li>
             <li class="flex items-start">
               <span
@@ -228,17 +317,23 @@
           <div class="relative bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8">
             <h3 class="text-2xl font-bold mb-6">Who Will Attend?</h3>
             <div class="grid grid-cols-2 gap-4">
-              <div class="p-3 bg-white/5 rounded-lg text-center text-sm hover:bg-white/10 transition-colors">Government
+              <div class="p-3 bg-white/5 rounded-lg text-center text-sm hover:bg-white/10 transition-colors">
+                Government
                 Officials</div>
-              <div class="p-3 bg-white/5 rounded-lg text-center text-sm hover:bg-white/10 transition-colors">AI
+              <div class="p-3 bg-white/5 rounded-lg text-center text-sm hover:bg-white/10 transition-colors">
+                AI
                 Researchers</div>
-              <div class="p-3 bg-white/5 rounded-lg text-center text-sm hover:bg-white/10 transition-colors">Tech CEOs &
+              <div class="p-3 bg-white/5 rounded-lg text-center text-sm hover:bg-white/10 transition-colors">
+                Tech CEOs &
                 CTOs</div>
-              <div class="p-3 bg-white/5 rounded-lg text-center text-sm hover:bg-white/10 transition-colors">Startup
+              <div class="p-3 bg-white/5 rounded-lg text-center text-sm hover:bg-white/10 transition-colors">
+                Startup
                 Founders</div>
-              <div class="p-3 bg-white/5 rounded-lg text-center text-sm hover:bg-white/10 transition-colors">Investors &
+              <div class="p-3 bg-white/5 rounded-lg text-center text-sm hover:bg-white/10 transition-colors">
+                Investors &
                 VCs</div>
-              <div class="p-3 bg-white/5 rounded-lg text-center text-sm hover:bg-white/10 transition-colors">Students &
+              <div class="p-3 bg-white/5 rounded-lg text-center text-sm hover:bg-white/10 transition-colors">
+                Students &
                 Academia</div>
             </div>
           </div>
@@ -249,7 +344,7 @@
 
   <!-- Key Themes Section -->
   <section class="py-20 bg-graphite-black relative reveal-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Key Themes</h2>
         <div class="w-24 h-1 bg-gradient-to-r from-bharat-saffron to-electric-blue mx-auto rounded-full"></div>
@@ -335,7 +430,7 @@
   <!-- Event Highlights (Stats) Section -->
   <section class="py-20 bg-black/50 relative border-y border-white/5 reveal-section">
     <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10"></div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         <div class="p-4">
           <div
@@ -367,7 +462,7 @@
 
   <!-- Industry Voices (Testimonials) Section -->
   <section class="py-20 bg-graphite-black relative reveal-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Industry Voices</h2>
         <div class="w-24 h-1 bg-gradient-to-r from-bharat-saffron to-electric-blue mx-auto rounded-full"></div>
@@ -376,7 +471,8 @@
         <!-- Testimonial 1 -->
         <div class="p-8 rounded-2xl bg-white/5 border border-white/10 relative">
           <div class="absolute -top-4 left-8 text-6xl text-bharat-saffron opacity-30 font-serif">"</div>
-          <p class="text-gray-300 mb-6 italic">"Bharat AI Innovation is the most significant platform for showcasing
+          <p class="text-gray-300 mb-6 italic">"Bharat AI Innovation is the most significant platform
+            for showcasing
             India's technological prowess. A must-attend for every tech leader."</p>
           <div class="flex items-center">
             <div class="w-10 h-10 rounded-full bg-gray-600 mr-4"></div>
@@ -389,7 +485,8 @@
         <!-- Testimonial 2 -->
         <div class="p-8 rounded-2xl bg-white/5 border border-white/10 relative">
           <div class="absolute -top-4 left-8 text-6xl text-electric-blue opacity-30 font-serif">"</div>
-          <p class="text-gray-300 mb-6 italic">"The quality of discussions and the level of innovation on display were
+          <p class="text-gray-300 mb-6 italic">"The quality of discussions and the level of
+            innovation on display were
             truly world-class. It's inspiring to see the future being built here."</p>
           <div class="flex items-center">
             <div class="w-10 h-10 rounded-full bg-gray-600 mr-4"></div>
@@ -402,7 +499,8 @@
         <!-- Testimonial 3 -->
         <div class="p-8 rounded-2xl bg-white/5 border border-white/10 relative">
           <div class="absolute -top-4 left-8 text-6xl text-emerald-green opacity-30 font-serif">"</div>
-          <p class="text-gray-300 mb-6 italic">"An exceptional event that bridges the gap between policy, industry, and
+          <p class="text-gray-300 mb-6 italic">"An exceptional event that bridges the gap between
+            policy, industry, and
             academia. The networking opportunities are unmatched."</p>
           <div class="flex items-center">
             <div class="w-10 h-10 rounded-full bg-gray-600 mr-4"></div>
@@ -416,9 +514,122 @@
     </div>
   </section>
 
+  <!-- Gallery of events  -->
+  <section class="max-w-[95%] mx-auto px-4 py-20">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Event Memories</h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-bharat-saffron to-electric-blue mx-auto rounded-full"></div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <!-- Gallery item (repeat for every image) -->
+      <button class="group relative overflow-hidden rounded-lg focus:outline-none" data-full="./img2.jpg">
+        <span class="block aspect-square">
+          <img loading="lazy" alt="Mountain view" src="./img2.jpg"
+            class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105" />
+        </span>
+
+        <!-- hover overlay -->
+        <span
+          class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+          aria-hidden="true"></span>
+
+        <!-- caption -->
+        <span class="absolute left-3 bottom-3 text-white text-sm drop-shadow-sm">DATA SCIENCE CONGRESS</span>
+      </button>
+
+      <button class="group relative overflow-hidden rounded-lg focus:outline-none" data-full="./img1.jpg">
+        <span class="block aspect-square">
+          <img loading="lazy" alt="Beach" src="./img1.jpg"
+            class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105" />
+        </span>
+        <span
+          class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+          aria-hidden="true"></span>
+        <span class="absolute left-3 bottom-3 text-white text-sm drop-shadow-sm">DATA SCIENCE CONGRESS</span>
+      </button>
+
+      <button class="group relative overflow-hidden rounded-lg focus:outline-none" data-full="./img3.jpg">
+        <span class="block aspect-square">
+          <img loading="lazy" alt="Forest" src="./img3.jpg"
+            class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105" />
+        </span>
+        <span
+          class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+          aria-hidden="true"></span>
+        <span class="absolute left-3 bottom-3 text-white text-sm drop-shadow-sm">DATA SCIENCE CONGRESS</span>
+      </button>
+
+      <button class="group relative overflow-hidden rounded-lg focus:outline-none" data-full="./img6.jpg">
+        <span class="block aspect-square">
+          <img loading="lazy" alt="City skyline" src="./img6.jpg"
+            class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105" />
+        </span>
+        <span
+          class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+          aria-hidden="true"></span>
+        <span class="absolute left-3 bottom-3 text-white text-sm drop-shadow-sm">DATA SCIENCE CONGRESS</span>
+      </button>
+
+
+      <!-- add more items as needed -->
+    </div>
+
+    <!-- Simple Lightbox Modal (vanilla JS) -->
+    <div id="galleryModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-4"
+      aria-hidden="true" role="dialog" aria-modal="true">
+      <div style="margin-left: auto; margin-right: auto;" class="max-w-5xl w-full relative">
+        <button id="modalClose"
+          class="absolute top-3 right-3 text-white bg-black/30 rounded-full p-2 focus:outline-none"
+          aria-label="Close">✕</button>
+        <img id="modalImg" src="" alt="" class="w-full max-h-[80vh] object-contain rounded-md shadow-lg" />
+        <p id="modalCaption" class="mt-2 text-sm text-white/90 text-center"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event venue -->
+  <section class="mx-auto px-4 py-20">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Event Venue</h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-bharat-saffron to-electric-blue mx-auto rounded-full"></div>
+    </div>
+    <div class="max-w-5xl mx-auto bg-graphite text-white rounded-xl overflow-hidden shadow-lg">
+      <div class="flex flex-col md:flex-row">
+
+        <!-- Image Left -->
+        <div class="md:w-1/2 h-64 md:h-auto">
+          <img src="./public/venue.jpg" alt="Event Venue" class="w-full h-full object-cover" />
+        </div>
+
+        <!-- Info Right -->
+        <div class="md:w-1/2 p-6 flex flex-col justify-center gap-4">
+          <h2 class="text-2xl font-semibold">Grand Horizon Event Hall</h2>
+
+          <p class="text-white/80">
+            A modern venue perfect for weddings, corporate events, and live shows.
+            Fully air-conditioned with premium seating and customizable stage setups.
+          </p>
+
+          <div class="text-sm space-y-2">
+            <p><span class="font-semibold">Location:</span> Bandra West, Mumbai</p>
+            <p><span class="font-semibold">Capacity:</span> 300–500 Guests</p>
+            <p><span class="font-semibold">Parking:</span> Available</p>
+          </div>
+
+          <button class="mt-4 w-max bg-white text-black px-5 py-2 rounded-lg font-medium hover:bg-white/90">
+            Book Now
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
   <!-- Footer -->
   <footer class="bg-black py-12 border-t border-white/10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div class="col-span-1 md:col-span-2">
           <a href="#" class="text-2xl font-bold font-montserrat tracking-wider mb-4 block">
@@ -447,13 +658,49 @@
           </ul>
         </div>
       </div>
-      <div class="mt-12 pt-8 border-t border-white/10 text-center text-gray-500 text-sm">
+      <div class="mt-12 pt-8 border-t border-gray-200 dark:border-white/10 text-center text-gray-500 text-sm">
         &copy; 2026 Bharat AI Innovation. All rights reserved.
       </div>
     </div>
   </footer>
 
   <script type="module" src="/src/main.js"></script>
+  <script>
+    (function () {
+      const modal = document.getElementById('galleryModal');
+      const modalImg = document.getElementById('modalImg');
+      const modalCaption = document.getElementById('modalCaption');
+      const closeBtn = document.getElementById('modalClose');
+
+      // open modal when any gallery button is clicked
+      document.querySelectorAll('section [data-full]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const full = btn.getAttribute('data-full');
+          const alt = btn.querySelector('img')?.alt || '';
+          const caption = btn.querySelector('span.absolute')?.textContent?.trim() || alt;
+
+          modalImg.src = full;
+          modalImg.alt = alt;
+          modalCaption.textContent = caption;
+          modal.classList.remove('hidden');
+          modal.focus();
+          modal.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      function closeModal() {
+        modal.classList.add('hidden');
+        modalImg.src = '';
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      closeBtn.addEventListener('click', closeModal);
+      modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal(); });
+    })();
+  </script>
 </body>
 
 </html>

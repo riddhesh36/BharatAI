@@ -6,24 +6,38 @@
   html {
     scroll-behavior: smooth;
   }
+
   body {
     @apply bg-graphite-black text-white font-inter;
   }
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-montserrat;
   }
 }
 
 @layer components {
   .glass-nav {
-    @apply backdrop-blur-md bg-graphite-black/70 border-b border-white/10;
+    @apply backdrop-blur-md bg-black/30 border-b border-white/10;
   }
+
   .gradient-text {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-bharat-saffron to-electric-blue;
   }
+
   .btn-primary {
-    @apply px-6 py-3 rounded-full font-semibold transition-all duration-300 bg-gradient-to-r from-bharat-saffron to-electric-blue hover:shadow-[0_0_20px_rgba(255,122,0,0.5)] text-white;
+    @apply px-6 py-3 rounded-full font-semibold transition-all duration-300 bg-gradient-to-r from-bharat-saffron to-electric-blue text-white;
   }
+
+  .btn-primary:hover {
+    box-shadow: 0 0 20px rgba(255, 122, 0, 0.5);
+  }
+
   .card-glass {
     @apply bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:border-bharat-saffron/50 transition-colors duration-300;
   }

@@ -5,7 +5,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", () => {
 
-
     // Navbar Toggle
     const mobileMenuBtn = document.getElementById("mobile-menu-btn");
     const mobileMenu = document.getElementById("mobile-menu");
@@ -62,6 +61,55 @@ document.addEventListener("DOMContentLoaded", () => {
             duration: 0.5,
             stagger: 0.1,
             ease: "power2.out"
+        });
+    });
+
+    // Scroll Expanding Video
+    const videoSection = document.querySelector("#video-section");
+    const videoContainer = document.querySelector("#video-container");
+
+    if (videoSection && videoContainer) {
+        gsap.fromTo(videoContainer,
+            {
+                width: "60%",
+                borderRadius: "24px" // Matches rounded-3xl
+            },
+            {
+                scrollTrigger: {
+                    trigger: videoSection,
+                    start: "top 80%", // Start when top of section hits 80% of viewport
+                    end: "center center", // End when center of section hits center of viewport
+                    scrub: 1,
+                    markers: false
+                },
+                width: "100%",
+                height: "100vh", // Expand height to full viewport height
+                borderRadius: "0px",
+                ease: "none"
+            }
+        );
+    }
+
+    // Process Section Animation
+    const steps = [
+        { id: "#process-step-1", img: "#process-img-1" },
+        { id: "#process-step-2", img: "#process-img-2" },
+        { id: "#process-step-3", img: "#process-img-3" }
+    ];
+
+    steps.forEach((step, index) => {
+        ScrollTrigger.create({
+            trigger: step.id,
+            start: "top center",
+            end: "bottom center",
+            onEnter: () => {
+                gsap.to(".sticky img", { opacity: 0, duration: 0.5 });
+                gsap.to(step.img, { opacity: 1, duration: 0.5 });
+            },
+            onEnterBack: () => {
+                gsap.to(".sticky img", { opacity: 0, duration: 0.5 });
+                gsap.to(step.img, { opacity: 1, duration: 0.5 });
+            }
         });
     });
 });
