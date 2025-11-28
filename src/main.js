@@ -1,9 +1,11 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { initHero3D } from "./hero-3d";
 
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", () => {
+    initHero3D();
 
     // Navbar Toggle
     const mobileMenuBtn = document.getElementById("mobile-menu-btn");
@@ -33,6 +35,53 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "elastic.out(1, 0.5)",
         delay: 0.5
     });
+
+    // Scramble Text Animation
+    const scrambleTextElement = document.getElementById("scramble-text");
+    if (scrambleTextElement) {
+        const words = ["Innovation", "Intelligence", "Revolution", "Future"];
+        let currentWordIndex = 0;
+        const chars = "!<>-_\\/[]{}—=+*^?#________";
+
+        const scramble = (newWord) => {
+            const oldWord = scrambleTextElement.innerText;
+            const length = Math.max(oldWord.length, newWord.length);
+            const promise = new Promise((resolve) => {
+                const tl = gsap.timeline();
+                let progress = 0;
+
+                tl.to({ p: 0 }, {
+                    duration: 1,
+                    p: 1,
+                    ease: "power4.inOut",
+                    onUpdate: function () {
+                        progress = this.targets()[0].p;
+                        let output = "";
+                        for (let i = 0; i < length; i++) {
+                            if (progress === 1 || i < Math.floor(progress * length)) {
+                                output += newWord[i] || "";
+                            } else {
+                                output += chars[Math.floor(Math.random() * chars.length)];
+                            }
+                        }
+                        scrambleTextElement.innerText = output;
+                    },
+                    onComplete: resolve
+                });
+            });
+            return promise;
+        };
+
+        const cycleWords = async () => {
+            while (true) {
+                await new Promise(r => setTimeout(r, 2000)); // Wait 2 seconds
+                currentWordIndex = (currentWordIndex + 1) % words.length;
+                await scramble(words[currentWordIndex]);
+            }
+        };
+
+        cycleWords();
+    }
 
     // Section Reveals
     gsap.utils.toArray(".reveal-section").forEach((section) => {
