@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         gsap.from(list.children, {
             scrollTrigger: {
                 trigger: list,
-                start: "top 85%",
+                start: "top 90%",
             },
             y: 30,
             opacity: 0,

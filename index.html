@@ -104,7 +104,7 @@
         </div>
 
         <h1
-          class="text-6xl md:text-8xl lg:text-9xl font-extrabold leading-tight mb-8 tracking-tight flex flex-col items-center">
+          class="text-6xl md:text-8xl lg:text-8xl font-extrabold leading-tight mb-8 tracking-tight flex flex-col items-center">
           <span>Bharat AI</span>
           <!-- Grid Spacer Technique for Stability -->
           <div class="relative grid place-items-center mt-2">
@@ -232,6 +232,76 @@
     </div>
   </section>
 
+  <!-- Organized By Section -->
+  <section class="py-20 bg-graphite-black relative reveal-section border-t border-white/5">
+    <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Organized By</h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-bharat-saffron to-electric-blue mx-auto rounded-full"></div>
+      </div>
+
+      <div class="flex flex-col gap-8">
+        <!-- Top: Aegis Knowledge Trust -->
+        <div class="card-glass p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
+          <div
+            class="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0 border border-white/20">
+            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+              </path>
+            </svg>
+          </div>
+          <div class="text-center md:text-left">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white">Aegis Knowledge Trust</h3>
+            <p class="text-gray-300 text-lg leading-relaxed mb-4">
+              Aegis Knowledge Trust is a leading knowledge platform that curates and delivers high-impact industry
+              events, bringing together thought leaders, innovators, and decision-makers.
+            </p>
+            <p class="text-gray-400 text-sm border-t border-white/10 pt-4">
+              With a proven track record in organizing national-level conferences, exhibitions, and award programs,
+              Aegis Knowledge Trust delivers exceptional platforms for knowledge sharing and networking.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bottom: Two Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Data Science Congress -->
+          <div class="card-glass p-8 text-center group hover:bg-white/10 transition-all">
+            <div
+              class="w-16 h-16 mx-auto bg-electric-blue/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <svg class="w-8 h-8 text-electric-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-white">Data Science Congress</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              India's premier data science and analytics platform connecting enterprises, startups, and academia.
+            </p>
+          </div>
+
+          <!-- Aegis Graham Bell Awards -->
+          <div class="card-glass p-8 text-center group hover:bg-white/10 transition-all">
+            <div
+              class="w-16 h-16 mx-auto bg-bharat-saffron/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <svg class="w-8 h-8 text-bharat-saffron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7">
+                </path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-white">Aegis Graham Bell Awards</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Recognizing excellence and innovation in telecommunications and ICT sectors across India.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Scroll Expanding Video Section -->
   <section id="video-section" class="py-20 bg-graphite-black relative overflow-hidden">
     <div class="w-full flex justify-center">
@@ -261,23 +331,18 @@
         <!-- Left Column: Sticky Images -->
         <div class="lg:w-1/2 hidden lg:block">
           <div
-            class="sticky top-24 h-[600px] w-full rounded-2xl overflow-hidden border border-white/10 bg-white/5 relative">
+            class="sticky top-24 h-[600px] w-full rounded-2xl overflow-hidden border border-white/10 bg-white relative">
             <!-- Image 1 -->
-            <img id="process-img-1"
-              src="file:///Users/apple/.gemini/antigravity/brain/26c4bd69-a3d9-4f4f-8a6f-b949a095b2c0/process_registration_illustration_1764307789302.png"
-              alt="Registration"
+            <img id="process-img-1" src="./scene 4.png" alt="Registration"
               class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100">
 
             <!-- Image 2 -->
-            <img id="process-img-2"
-              src="file:///Users/apple/.gemini/antigravity/brain/26c4bd69-a3d9-4f4f-8a6f-b949a095b2c0/process_selection_illustration_1764307806228.png"
-              alt="Selection"
+            <img id="process-img-2" src="./scene 6.png" alt="Selection"
               class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0">
 
             <!-- Image 3 -->
-            <img id="process-img-3"
-              src="file:///Users/apple/.gemini/antigravity/brain/26c4bd69-a3d9-4f4f-8a6f-b949a095b2c0/process_event_illustration_1764307868463.png"
-              alt="Event" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0">
+            <img id="process-img-3" src="./scene 15.png" alt="Event"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0">
           </div>
         </div>
 
@@ -611,64 +676,11 @@
     </div>
   </section>
 
-  <!-- Industry Voices (Testimonials) Section -->
-  <section class="py-20 bg-graphite-black relative reveal-section">
-    <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Industry Voices</h2>
-        <div class="w-24 h-1 bg-gradient-to-r from-bharat-saffron to-electric-blue mx-auto rounded-full"></div>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Testimonial 1 -->
-        <div class="p-8 rounded-2xl bg-white/5 border border-white/10 relative">
-          <div class="absolute -top-4 left-8 text-6xl text-bharat-saffron opacity-30 font-serif">"</div>
-          <p class="text-gray-300 mb-6 italic">"Bharat AI Innovation is the most significant platform
-            for showcasing
-            India's technological prowess. A must-attend for every tech leader."</p>
-          <div class="flex items-center">
-            <div class="w-10 h-10 rounded-full bg-gray-600 mr-4"></div>
-            <div>
-              <div class="font-bold text-white">Rajesh Kumar</div>
-              <div class="text-sm text-gray-400">CEO, TechIndia Corp</div>
-            </div>
-          </div>
-        </div>
-        <!-- Testimonial 2 -->
-        <div class="p-8 rounded-2xl bg-white/5 border border-white/10 relative">
-          <div class="absolute -top-4 left-8 text-6xl text-electric-blue opacity-30 font-serif">"</div>
-          <p class="text-gray-300 mb-6 italic">"The quality of discussions and the level of
-            innovation on display were
-            truly world-class. It's inspiring to see the future being built here."</p>
-          <div class="flex items-center">
-            <div class="w-10 h-10 rounded-full bg-gray-600 mr-4"></div>
-            <div>
-              <div class="font-bold text-white">Sarah Jenkins</div>
-              <div class="text-sm text-gray-400">Director, Global AI Research</div>
-            </div>
-          </div>
-        </div>
-        <!-- Testimonial 3 -->
-        <div class="p-8 rounded-2xl bg-white/5 border border-white/10 relative">
-          <div class="absolute -top-4 left-8 text-6xl text-emerald-green opacity-30 font-serif">"</div>
-          <p class="text-gray-300 mb-6 italic">"An exceptional event that bridges the gap between
-            policy, industry, and
-            academia. The networking opportunities are unmatched."</p>
-          <div class="flex items-center">
-            <div class="w-10 h-10 rounded-full bg-gray-600 mr-4"></div>
-            <div>
-              <div class="font-bold text-white">Dr. Amit Singh</div>
-              <div class="text-sm text-gray-400">Professor of Robotics, IIT Bombay</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Gallery of events  -->
   <section class="max-w-[95%] mx-auto px-4 py-20">
     <div class="text-center mb-16">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Event Memories</h2>
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Past Event Memories</h2>
       <div class="w-24 h-1 bg-gradient-to-r from-bharat-saffron to-electric-blue mx-auto rounded-full"></div>
     </div>
 
@@ -763,7 +775,8 @@
           </p>
 
           <div class="text-sm space-y-2">
-            <p><span class="font-semibold">Location:</span> Bandra West, Mumbai</p>
+            <p><span class="font-semibold">Location:</span> World Trade Center Mumbai, Cuffe Parade, Mumbai,
+              Maharashtra, 400005</p>
             <p><span class="font-semibold">Capacity:</span> 300–500 Guests</p>
             <p><span class="font-semibold">Parking:</span> Available</p>
           </div>
