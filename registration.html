@@ -119,77 +119,75 @@
             <!-- Delegate Form -->
             <div id="delegate-form" class="card-glass p-8">
                 <h2 class="text-2xl font-bold mb-6 text-center">Delegate Registration</h2>
-                <form class="space-y-6">
+                <form class="space-y-6" name="submit-to-google-sheet">
+                    <input type="hidden" name="formType" value="delegate">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label class="block text-sm font-medium text-gray-400 mb-2">First
-                                Name</label>
-                            <input type="text"
+                            <label class="block text-sm font-medium text-gray-400 mb-2">First Name</label>
+                            <input type="text" name="firstName" required
                                 class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
                                 placeholder="John">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-400 mb-2">Last
-                                Name</label>
-                            <input type="text"
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Last Name</label>
+                            <input type="text" name="lastName" required
                                 class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
                                 placeholder="Doe">
                         </div>
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-400 mb-2">Email
-                            Address</label>
-                        <input type="email"
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Email Address</label>
+                        <input type="email" name="email" required
                             class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
                             placeholder="john@example.com">
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-400 mb-2">Organization</label>
-                        <input type="text"
+                        <input type="text" name="organization" required
                             class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
                             placeholder="Company Name">
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-400 mb-2">Job Title</label>
-                        <input type="text"
+                        <input type="text" name="jobTitle" required
                             class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
                             placeholder="CTO">
                     </div>
                     <button type="submit" class="w-full btn-primary">Register as Delegate</button>
+                    <p class="text-center text-sm mt-4 hidden success-message text-green-400">Registration Successful!
+                    </p>
+                    <p class="text-center text-sm mt-4 hidden error-message text-red-400">Error! Please try again.</p>
                 </form>
             </div>
 
             <!-- Exhibitor Form (Hidden by default) -->
             <div id="exhibitor-form" class="card-glass p-8 hidden">
                 <h2 class="text-2xl font-bold mb-6 text-center">Exhibitor Registration</h2>
-                <form class="space-y-6">
+                <form class="space-y-6" name="submit-to-google-sheet">
+                    <input type="hidden" name="formType" value="exhibitor">
                     <div>
-                        <label class="block text-sm font-medium text-gray-400 mb-2">Company
-                            Name</label>
-                        <input type="text"
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Company Name</label>
+                        <input type="text" name="companyName" required
                             class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
                             placeholder="Tech Corp">
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label class="block text-sm font-medium text-gray-400 mb-2">Contact
-                                Person</label>
-                            <input type="text"
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Contact Person</label>
+                            <input type="text" name="contactPerson" required
                                 class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
                                 placeholder="Name">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-400 mb-2">Phone
-                                Number</label>
-                            <input type="tel"
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Phone Number</label>
+                            <input type="tel" name="phone" required
                                 class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
                                 placeholder="+91...">
                         </div>
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-400 mb-2">Booth Size
-                            Requirement</label>
-                        <select
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Booth Size Requirement</label>
+                        <select name="boothSize"
                             class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors text-gray-300">
                             <option>Standard (3x3m)</option>
                             <option>Premium (6x3m)</option>
@@ -197,23 +195,26 @@
                         </select>
                     </div>
                     <button type="submit" class="w-full btn-primary">Request Exhibitor Info</button>
+                    <p class="text-center text-sm mt-4 hidden success-message text-green-400">Request Sent Successfully!
+                    </p>
+                    <p class="text-center text-sm mt-4 hidden error-message text-red-400">Error! Please try again.</p>
                 </form>
             </div>
 
             <!-- Award Form (Hidden by default) -->
             <div id="award-form" class="card-glass p-8 hidden">
                 <h2 class="text-2xl font-bold mb-6 text-center">Award Nomination</h2>
-                <form class="space-y-6">
+                <form class="space-y-6" name="submit-to-google-sheet">
+                    <input type="hidden" name="formType" value="award">
                     <div>
-                        <label class="block text-sm font-medium text-gray-400 mb-2">Nominee Name /
-                            Project</label>
-                        <input type="text"
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Nominee Name / Project</label>
+                        <input type="text" name="nomineeName" required
                             class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors"
                             placeholder="Project X">
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-400 mb-2">Category</label>
-                        <select
+                        <select name="category"
                             class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors text-gray-300">
                             <option>Best AI Startup</option>
                             <option>AI for Social Good</option>
@@ -222,13 +223,15 @@
                         </select>
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-400 mb-2">Description of
-                            Innovation</label>
-                        <textarea
+                        <label class="block text-sm font-medium text-gray-400 mb-2">Description of Innovation</label>
+                        <textarea name="description" required
                             class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors h-32"
                             placeholder="Describe the impact..."></textarea>
                     </div>
                     <button type="submit" class="w-full btn-primary">Submit Nomination</button>
+                    <p class="text-center text-sm mt-4 hidden success-message text-green-400">Nomination Submitted
+                        Successfully!</p>
+                    <p class="text-center text-sm mt-4 hidden error-message text-red-400">Error! Please try again.</p>
                 </form>
             </div>
 
@@ -284,9 +287,65 @@
             // Show selected form
             document.getElementById(tabName + '-form').classList.remove('hidden');
 
-            // Update button styles (simplified for this demo)
-            // In a real app, I'd toggle classes on the buttons too
+            // Update active state for buttons (simple implementation)
+            const buttons = document.querySelectorAll('button[onclick^="switchTab"]');
+            buttons.forEach(btn => {
+                if (btn.getAttribute('onclick').includes(tabName)) {
+                    btn.classList.add('bg-gray-200', 'text-black');
+                    btn.classList.remove('bg-transparent', 'text-white');
+                } else {
+                    btn.classList.remove('bg-gray-200', 'text-black');
+                    btn.classList.add('bg-transparent');
+                }
+            });
         }
+
+        // Google Sheets Submission Logic
+        // REPLACE THIS URL WITH YOUR GOOGLE APPS SCRIPT WEB APP URL
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw0tkWwkkTH6fa7TMYm2Hsduz-7dZxh1eSaGYbEOmGlhJmAFfAQAL1gENGUUArBvg3Sbw/exec';
+
+        const forms = document.querySelectorAll('form[name="submit-to-google-sheet"]');
+
+        forms.forEach(form => {
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                const btn = form.querySelector('button[type="submit"]');
+                const originalText = btn.innerText;
+                btn.disabled = true;
+                btn.innerText = 'Submitting...';
+
+                const successMsg = form.querySelector('.success-message');
+                const errorMsg = form.querySelector('.error-message');
+
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => response.json())
+                    .then(response => {
+                        console.log('Script Response:', response); // Debug log
+                        if (response.result === 'success') {
+                            successMsg.classList.remove('hidden');
+                            errorMsg.classList.add('hidden');
+                            form.reset();
+                            setTimeout(() => {
+                                successMsg.classList.add('hidden');
+                            }, 5000);
+                        } else {
+                            // Handle if error is an object
+                            const errorText = typeof response.error === 'object' ? JSON.stringify(response.error) : response.error;
+                            throw new Error(errorText || 'Script returned error');
+                        }
+                        btn.disabled = false;
+                        btn.innerText = originalText;
+                    })
+                    .catch(error => {
+                        console.error('Submission Error:', error);
+                        errorMsg.textContent = 'Error: ' + error.message;
+                        errorMsg.classList.remove('hidden');
+                        successMsg.classList.add('hidden');
+                        btn.disabled = false;
+                        btn.innerText = originalText;
+                    });
+            });
+        });
     </script>
     <script type="module" src="/src/main.js"></script>
 </body>
