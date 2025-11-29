@@ -1,19 +1,19 @@
-import { defineConfig } from 'vite';
-import { resolve } from 'path';
+import { defineConfig } from 'vite'
 
 export default defineConfig({
     build: {
         rollupOptions: {
             input: {
-                main: resolve(__dirname, 'index.html'),
-                about: resolve(__dirname, 'about.html'),
-                conference: resolve(__dirname, 'conference.html'),
-                exhibition: resolve(__dirname, 'exhibition.html'),
-                awards: resolve(__dirname, 'awards.html'),
-                partners: resolve(__dirname, 'partners.html'),
-                registration: resolve(__dirname, 'registration.html'),
-                contact: resolve(__dirname, 'contact.html'),
-            },
-        },
-    },
-});
+                main: './src/index.html',
+                about: './src/about.html',
+                awards: './src/awards.html',
+                conference: './src/conference.html',
+                contact: './src/contact.html',
+                delegation: './src/delegation.html',
+                exhibition: './src/exhibition.html',
+                partners: './src/partners.html',
+                registration: './src/registration.html'
+            }
+        }
+    }
+})
