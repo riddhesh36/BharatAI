@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delegation - Bharat AI Innovation 2026</title>
+    <meta name="description"
+        content="Bring your team to India's Premier AI Event. Exclusive packages for corporate delegations and startups." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;600;700;800&family=Mukta:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./input.css">
+</head>
+
+<body class="bg-graphite-black text-white overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold font-montserrat tracking-wider">
+                        BHARAT <span class="text-bharat-saffron">AI</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="about.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="conference.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Conference</a>
+                        <a href="exhibition.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Exhibition</a>
+                        <a href="awards.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Awards</a>
+                        <a href="delegation.html"
+                            class="text-white hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Delegation</a>
+                        <a href="partners.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Partners</a>
+                        <a href="contact.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                        <a href="registration.html"
+                            class="bg-gradient-to-r from-bharat-saffron to-electric-blue text-white px-5 py-2 rounded-full text-sm font-medium hover:shadow-lg hover:shadow-bharat-saffron/30 transition-all">Register</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button id="mobile-menu-btn" type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden bg-graphite-black/95 backdrop-blur-xl" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="conference.html"
+                    class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Conference</a>
+                <a href="exhibition.html"
+                    class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Exhibition</a>
+                <a href="awards.html" class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Awards</a>
+                <a href="delegation.html"
+                    class="text-white block px-3 py-2 rounded-md text-base font-medium">Delegation</a>
+                <a href="partners.html"
+                    class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Partners</a>
+                <a href="contact.html"
+                    class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <a href="registration.html"
+                    class="text-bharat-saffron block px-3 py-2 rounded-md text-base font-medium">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20">
+        <!-- Background Effects -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-0 right-1/4 w-96 h-96 bg-electric-blue/20 rounded-full blur-[100px] animate-pulse">
+            </div>
+            <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-[100px] animate-pulse"
+                style="animation-delay: 2s;"></div>
+            <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
+        </div>
+
+        <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-block px-4 py-1 rounded-full border border-electric-blue/30 bg-electric-blue/10 mb-6">
+                <span class="text-electric-blue font-semibold tracking-wider text-sm uppercase">Corporate & Group
+                    Access</span>
+            </div>
+            <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight mb-6">
+                Empower Your <br />
+                <span class="gradient-text">Organization</span>
+            </h1>
+            <p class="text-xl text-gray-300 mb-8 font-light max-w-2xl mx-auto">
+                Bring your team to India's Premier AI Event. Unlock exclusive benefits, networking, and strategic
+                insights.
+            </p>
+        </div>
+    </section>
+
+    <!-- Why Delegate? (Benefits) -->
+    <section class="py-20 bg-graphite-black relative reveal-section">
+        <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Bring Your Team?</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-bharat-saffron to-electric-blue mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Benefit 1 -->
+                <div class="card-glass group p-8 text-center hover:-translate-y-2 transition-transform duration-300">
+                    <div
+                        class="w-16 h-16 mx-auto bg-bharat-saffron/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="text-3xl">🚀</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Drive Innovation</h3>
+                    <p class="text-gray-400 text-sm">Expose your team to cutting-edge AI trends and tools to fuel
+                        internal
+                        innovation.</p>
+                </div>
+                <!-- Benefit 2 -->
+                <div class="card-glass group p-8 text-center hover:-translate-y-2 transition-transform duration-300">
+                    <div
+                        class="w-16 h-16 mx-auto bg-electric-blue/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="text-3xl">🤝</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Strategic Networking</h3>
+                    <p class="text-gray-400 text-sm">Connect with potential partners, clients, and government officials
+                        at scale.
+                    </p>
+                </div>
+                <!-- Benefit 3 -->
+                <div class="card-glass group p-8 text-center hover:-translate-y-2 transition-transform duration-300">
+                    <div
+                        class="w-16 h-16 mx-auto bg-emerald-green/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="text-3xl">🧠</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Talent Development</h3>
+                    <p class="text-gray-400 text-sm">Upskill your workforce with workshops and sessions from global AI
+                        experts.
+                    </p>
+                </div>
+                <!-- Benefit 4 -->
+                <div class="card-glass group p-8 text-center hover:-translate-y-2 transition-transform duration-300">
+                    <div
+                        class="w-16 h-16 mx-auto bg-royal-gold/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="text-3xl">💼</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Brand Visibility</h3>
+                    <p class="text-gray-400 text-sm">Showcase your company's commitment to the future of technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delegation Packages -->
+    <section class="py-20 bg-white/5 relative reveal-section">
+        <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Delegation Packages</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-bharat-saffron to-electric-blue mx-auto rounded-full"></div>
+                <p class="mt-4 text-gray-400">Tailored experiences for every group size</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Startup Squad -->
+                <div class="card-glass border-t-4 border-t-emerald-green p-8 relative overflow-hidden group">
+                    <div
+                        class="absolute top-0 right-0 bg-emerald-green/20 px-3 py-1 rounded-bl-lg text-xs text-emerald-green font-bold">
+                        STARTUPS</div>
+                    <h3 class="text-2xl font-bold mb-2">Startup Squad</h3>
+                    <p class="text-gray-400 mb-6">Perfect for agile teams looking to disrupt.</p>
+                    <div class="text-4xl font-bold mb-6">₹15,000<span
+                            class="text-lg text-gray-500 font-normal">/person</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-gray-300">
+                        <li class="flex items-center"><span class="text-emerald-green mr-2">✓</span> Group of 3-5
+                            members</li>
+                        <li class="flex items-center"><span class="text-emerald-green mr-2">✓</span> Full Conference
+                            Access</li>
+                        <li class="flex items-center"><span class="text-emerald-green mr-2">✓</span> Pitch Session Entry
+                        </li>
+                        <li class="flex items-center"><span class="text-emerald-green mr-2">✓</span> Networking App
+                            Access</li>
+                    </ul>
+                    <a href="#"
+                        class="block w-full py-3 rounded-lg border border-emerald-green text-emerald-green text-center font-semibold hover:bg-emerald-green hover:text-white transition-all">Get
+                        Started</a>
+                </div>
+
+                <!-- Corporate Council -->
+                <div
+                    class="card-glass border-t-4 border-t-electric-blue p-8 relative overflow-hidden group transform md:-translate-y-4">
+                    <div
+                        class="absolute top-0 right-0 bg-electric-blue text-white px-3 py-1 rounded-bl-lg text-xs font-bold">
+                        POPULAR</div>
+                    <h3 class="text-2xl font-bold mb-2">Corporate Council</h3>
+                    <p class="text-gray-400 mb-6">For established enterprises driving change.</p>
+                    <div class="text-4xl font-bold mb-6">₹25,000<span
+                            class="text-lg text-gray-500 font-normal">/person</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-gray-300">
+                        <li class="flex items-center"><span class="text-electric-blue mr-2">✓</span> Group of 5-15
+                            members</li>
+                        <li class="flex items-center"><span class="text-electric-blue mr-2">✓</span> VIP Lounge Access
+                        </li>
+                        <li class="flex items-center"><span class="text-electric-blue mr-2">✓</span> Dedicated Account
+                            Manager</li>
+                        <li class="flex items-center"><span class="text-electric-blue mr-2">✓</span> Branding on Website
+                        </li>
+                    </ul>
+                    <a href="#"
+                        class="block w-full py-3 rounded-lg bg-electric-blue text-white text-center font-semibold hover:shadow-lg hover:shadow-electric-blue/30 transition-all">Request
+                        Quote</a>
+                </div>
+
+                <!-- Global Delegation -->
+                <div class="card-glass border-t-4 border-t-bharat-saffron p-8 relative overflow-hidden group">
+                    <div
+                        class="absolute top-0 right-0 bg-bharat-saffron/20 px-3 py-1 rounded-bl-lg text-xs text-bharat-saffron font-bold">
+                        INTERNATIONAL</div>
+                    <h3 class="text-2xl font-bold mb-2">Global Delegation</h3>
+                    <p class="text-gray-400 mb-6">Comprehensive package for international groups.</p>
+                    <div class="text-4xl font-bold mb-6">Custom<span class="text-lg text-gray-500 font-normal">
+                            Pricing</span>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-gray-300">
+                        <li class="flex items-center"><span class="text-bharat-saffron mr-2">✓</span> 15+ members</li>
+                        <li class="flex items-center"><span class="text-bharat-saffron mr-2">✓</span> Accommodation
+                            Support</li>
+                        <li class="flex items-center"><span class="text-bharat-saffron mr-2">✓</span> Private Meeting
+                            Rooms</li>
+                        <li class="flex items-center"><span class="text-bharat-saffron mr-2">✓</span> Cultural Tour
+                            Included</li>
+                    </ul>
+                    <a href="#"
+                        class="block w-full py-3 rounded-lg border border-bharat-saffron text-bharat-saffron text-center font-semibold hover:bg-bharat-saffron hover:text-white transition-all">Contact
+                        Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Delegations / Testimonials -->
+    <section class="py-20 bg-graphite-black relative reveal-section">
+        <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Trusted by Industry Leaders</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-bharat-saffron to-electric-blue mx-auto rounded-full"></div>
+            </div>
+
+            <!-- Logos Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center opacity-70 mb-16">
+                <!-- Placeholder Logos using text for now, or simple SVGs if available. Using text placeholders for simplicity as per plan 'Logos of past attending companies' -->
+                <div class="text-2xl font-bold text-gray-500 text-center">TechCorp</div>
+                <div class="text-2xl font-bold text-gray-500 text-center">InnovateX</div>
+                <div class="text-2xl font-bold text-gray-500 text-center">FutureAI</div>
+                <div class="text-2xl font-bold text-gray-500 text-center">GlobalSys</div>
+                <div class="text-2xl font-bold text-gray-500 text-center">DataFlow</div>
+                <div class="text-2xl font-bold text-gray-500 text-center">SmartNet</div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-6 rounded-xl bg-white/5 border border-white/10">
+                    <p class="text-gray-300 italic mb-4">"Bringing our R&D team to Bharat AI Innovation was the best
+                        investment we made this year. The insights we gained accelerated our roadmap by months."</p>
+                    <div class="font-bold text-white">- VP of Engineering, TechCorp</div>
+                </div>
+                <div class="p-6 rounded-xl bg-white/5 border border-white/10">
+                    <p class="text-gray-300 italic mb-4">"The delegation package made everything seamless. From VIP
+                        access to private meeting rooms, we felt truly valued."</p>
+                    <div class="font-bold text-white">- Director, GlobalSys</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-graphite-black relative overflow-hidden reveal-section">
+        <div class="absolute inset-0 bg-gradient-to-r from-bharat-saffron/10 to-electric-blue/10"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-4xl font-bold mb-6">Ready to Bring Your Team?</h2>
+            <p class="text-xl text-gray-300 mb-8">
+                Secure your delegation's spot at the most influential AI event of the year.
+                Early bird offers available for large groups.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="btn-primary">Register Delegation</a>
+                <a href="#"
+                    class="px-8 py-3 rounded-full font-semibold border border-white/20 hover:bg-white/10 transition-all">Download
+                    Brochure</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-white/10">
+        <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="#" class="text-2xl font-bold font-montserrat tracking-wider mb-4 block">
+                        BHARAT <span class="text-bharat-saffron">AI</span>
+                    </a>
+                    <p class="text-gray-400 max-w-md">
+                        Bharat AI Innovation — Conference, Exhibition & Awards 2026. <br>
+                        Advancing India’s Future Through AI Innovation.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-bharat-saffron transition-colors">About</a></li>
+                        <li><a href="conference.html" class="hover:text-bharat-saffron transition-colors">Conference</a>
+                        </li>
+                        <li><a href="exhibition.html" class="hover:text-bharat-saffron transition-colors">Exhibition</a>
+                        </li>
+                        <li><a href="awards.html" class="hover:text-bharat-saffron transition-colors">Awards</a></li>
+                        <li><a href="delegation.html" class="hover:text-bharat-saffron transition-colors">Delegation</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>info@bharataiinnovation.com</li>
+                        <li>+91-XXXXXXXXXX</li>
+                        <li>Mumbai, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-200 dark:border-white/10 text-center text-gray-500 text-sm">
+                &copy; 2026 Bharat AI Innovation. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

@@ -1,19 +1,22 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
 
 export default defineConfig({
+    root: "src",
     build: {
+        outDir: "../dist",
+        emptyOutDir: true,
         rollupOptions: {
             input: {
-                main: './src/index.html',
-                about: './src/about.html',
-                awards: './src/awards.html',
-                conference: './src/conference.html',
-                contact: './src/contact.html',
-                delegation: './src/delegation.html',
-                exhibition: './src/exhibition.html',
-                partners: './src/partners.html',
-                registration: './src/registration.html'
+                main: "src/index.html",
+                about: "src/about.html",
+                awards: "src/awards.html",
+                conference: "src/conference.html",
+                contact: "src/contact.html",
+                delegation: "src/delegation.html",
+                exhibition: "src/exhibition.html",
+                partners: "src/partners.html",
+                registration: "src/registration.html",
             }
         }
     }
-})
+});

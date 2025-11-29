@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Bharat AI Innovation</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;600;700;800&family=Mukta:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./input.css">
+</head>
+
+<body class="bg-graphite-black text-white overflow-x-hidden">
+
+    <!-- Navbar (Duplicated) -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold font-montserrat tracking-wider">
+                        BHARAT <span class="text-bharat-saffron">AI</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="text-white hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="about.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="conference.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Conference</a>
+                        <a href="exhibition.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Exhibition</a>
+                        <a href="awards.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Awards</a>
+                        <a href="delegation.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Delegation</a>
+                        <a href="partners.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Partners</a>
+                        <a href="contact.html"
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                        <a href="registration.html"
+                            class="bg-gradient-to-r from-bharat-saffron to-electric-blue text-white px-5 py-2 rounded-full text-sm font-medium hover:shadow-lg hover:shadow-bharat-saffron/30 transition-all">Register</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button id="mobile-menu-btn" type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden bg-graphite-black/95 backdrop-blur-xl" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html"
+                    class="text-gray-600 dark:text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html"
+                    class="text-gray-600 dark:text-gray-300 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="conference.html"
+                    class="text-gray-600 dark:text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Conference</a>
+                <a href="exhibition.html"
+                    class="text-gray-600 dark:text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Exhibition</a>
+                <a href="awards.html" class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Awards</a>
+                <a href="delegation.html"
+                    class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Delegation</a>
+                <a href="partners.html"
+                    class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Partners</a>
+                <a href="contact.html" class="text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <a href="registration.html"
+                    class="text-bharat-saffron block px-3 py-2 rounded-md text-base font-medium">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-16 bg-gradient-to-b from-black to-graphite-black relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
+            <div
+                class="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-electric-blue/10 rounded-full blur-[120px]">
+            </div>
+        </div>
+        <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Contact <span class="gradient-text">Us</span></h1>
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                Get in touch with the event secretariat.
+            </p>
+        </div>
+    </header>
+
+    <!-- Contact Info & Form -->
+    <section class="py-20 reveal-section">
+        <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+                <!-- Info -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8">Event Secretariat</h2>
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 h-12 w-12 rounded-lg bg-white/5 flex items-center justify-center">
+                                <svg class="w-6 h-6 text-bharat-saffron" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="text-lg font-semibold mb-1">Email</h3>
+                                <p class="text-gray-400">info@bharataiinnovation.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 h-12 w-12 rounded-lg bg-white/5 flex items-center justify-center">
+                                <svg class="w-6 h-6 text-electric-blue" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="text-lg font-semibold mb-1">Phone</h3>
+                                <p class="text-gray-400">+91-XXXXXXXXXX</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 h-12 w-12 rounded-lg bg-white/5 flex items-center justify-center">
+                                <svg class="w-6 h-6 text-emerald-green" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="text-lg font-semibold mb-1">Location</h3>
+                                <p class="text-gray-400">Mumbai, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="card-glass p-8">
+                    <h2 class="text-2xl font-bold mb-6">Send us a message</h2>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Name</label>
+                            <input type="text"
+                                class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Email</label>
+                            <input type="email"
+                                class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Message</label>
+                            <textarea
+                                class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-bharat-saffron transition-colors h-32"></textarea>
+                        </div>
+                        <button type="submit" class="w-full btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Duplicated) -->
+    <footer class="bg-black py-12 border-t border-white/10">
+        <div class="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="#" class="text-2xl font-bold font-montserrat tracking-wider mb-4 block">
+                        BHARAT <span class="text-bharat-saffron">AI</span>
+                    </a>
+                    <p class="text-gray-400 max-w-md">
+                        Bharat AI Innovation — Conference, Exhibition & Awards 2026. <br>
+                        Advancing India’s Future Through AI Innovation.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-bharat-saffron transition-colors">About</a></li>
+                        <li><a href="conference.html" class="hover:text-bharat-saffron transition-colors">Conference</a>
+                        </li>
+                        <li><a href="exhibition.html" class="hover:text-bharat-saffron transition-colors">Exhibition</a>
+                        </li>
+                        <li><a href="awards.html" class="hover:text-bharat-saffron transition-colors">Awards</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>info@bharataiinnovation.com</li>
+                        <li>+91-XXXXXXXXXX</li>
+                        <li>Mumbai, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-white/10 text-center text-gray-500 text-sm">
+                &copy; 2026 Bharat AI Innovation. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
