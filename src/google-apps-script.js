@@ -12,7 +12,8 @@ function doPost(e) {
         const nextRow = sheet.getLastRow() + 1;
 
         const newRow = headers.map(function (header) {
-            return header === 'timestamp' ? new Date() : e.parameter[header];
+            if (header === 'timestamp') return new Date();
+            return e.parameter[header] || "";
         });
 
         sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow]);
