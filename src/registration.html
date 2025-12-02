@@ -30,7 +30,7 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="index.html"
-                            class="text-white hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                            class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
                         <a href="about.html"
                             class="text-gray-300 hover:text-bharat-saffron px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
                         <a href="conference.html"
@@ -106,13 +106,13 @@
             <!-- Tabs -->
             <div class="flex justify-center mb-12 space-x-4">
                 <button
-                    class="px-6 py-2 rounded-full bg-gray-200 hover:bg-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-bharat-saffron active-tab"
+                    class="px-6 py-2 rounded-full bg-bharat-saffron text-white hover:bg-bharat-saffron/80 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-bharat-saffron active-tab"
                     onclick="switchTab('delegate')">Delegate</button>
                 <button
-                    class="px-6 py-2 rounded-full bg-transparent border border-gray-300 dark:border-white/20 hover:bg-gray-200 dark:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-bharat-saffron"
+                    class="px-6 py-2 rounded-full bg-white/5 border border-white/10 text-gray-300 hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-bharat-saffron"
                     onclick="switchTab('exhibitor')">Exhibitor</button>
                 <button
-                    class="px-6 py-2 rounded-full bg-transparent border border-gray-300 dark:border-white/20 hover:bg-gray-200 dark:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-bharat-saffron"
+                    class="px-6 py-2 rounded-full bg-white/5 border border-white/10 text-gray-300 hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-bharat-saffron"
                     onclick="switchTab('award')">Award Nomination</button>
             </div>
 
@@ -287,22 +287,20 @@
             // Show selected form
             document.getElementById(tabName + '-form').classList.remove('hidden');
 
-            // Update active state for buttons (simple implementation)
+            // Update active state for buttons
             const buttons = document.querySelectorAll('button[onclick^="switchTab"]');
             buttons.forEach(btn => {
                 if (btn.getAttribute('onclick').includes(tabName)) {
-                    btn.classList.add('bg-gray-200', 'text-black');
-                    btn.classList.remove('bg-transparent', 'text-white');
+                    btn.className = 'px-6 py-2 rounded-full bg-bharat-saffron text-white hover:bg-bharat-saffron/80 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-bharat-saffron active-tab';
                 } else {
-                    btn.classList.remove('bg-gray-200', 'text-black');
-                    btn.classList.add('bg-transparent');
+                    btn.className = 'px-6 py-2 rounded-full bg-white/5 border border-white/10 text-gray-300 hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-bharat-saffron';
                 }
             });
         }
 
         // Google Sheets Submission Logic
         // REPLACE THIS URL WITH YOUR GOOGLE APPS SCRIPT WEB APP URL
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbw0tkWwkkTH6fa7TMYm2Hsduz-7dZxh1eSaGYbEOmGlhJmAFfAQAL1gENGUUArBvg3Sbw/exec';
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxO4XetgumgeqUGKTB9ubkbxof8hxS_qCbI6b8Vb8YkJifNxv2mqOnMZjvJdW5U_9TU/exec';
 
         const forms = document.querySelectorAll('form[name="submit-to-google-sheet"]');
 
